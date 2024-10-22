@@ -2,7 +2,7 @@
 
 Submitted by: Mignot Mesele
 
-This web app: **insert description**
+This web app: provides users with the weather forcast of a given city, state with the option choosing the number of days to display
 
 Time spent: 5 hours spent in total
 
@@ -12,8 +12,10 @@ The following **required** functionality is completed:
 
 - [X] **The list displays a list of data fetched using an API call**
 - [X] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
-  - [ ] *insert details*
+- [X] **The app dashboard includes at least three summary statistics about the data such as**
+  - [X] Added total number of days
+  - [X] Added average high temperature of the given days
+  - [X] Added average low temperature of the given days
 - [X] **A search bar allows the user to search for an item in the fetched data**
 - [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
@@ -25,7 +27,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] Provides icons of the weather for each day
+* [X] Provides the option to input the number of days to fetch from the api
 
 ## Video Walkthrough
 
@@ -38,7 +41,7 @@ GIF created with [Kap](https://getkap.co/) for macOS
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had a challenge displaying the statistics because a zero would display once rendered which wasn't supposed to happen. Instead I checked if the forecasts have been pulled from the api by checking if the state variable for the forecast was filled.
 
 ## License
 
